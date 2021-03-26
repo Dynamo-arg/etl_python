@@ -31,11 +31,11 @@ def extract():
 
         api_instance = meli.OAuth20Api(api_client)
         grant_type = 'refresh_token' # or 'refresh_token' if you need get one new token
-        client_id = '1168054310416447' 
-        client_secret = 'kdxgHYxI8enxKZOVUdazyzq3VabrqD8D' 
+        client_id = '' # ID CLIENTE LO SAQUE POR SEGURIDAD 
+        client_secret = '' # CLIENT KEY LO SAQUE POR SEGURIDAD 
         redirect_uri = 'https://mercadolibre.com.ar' 
         code = '' # The parameter CODE, empty if your send a refresh_token
-        refresh_token = 'TG-605354c8c3aa2e0008d4a35d-184827283' # Your refresh_token
+        refresh_token = '' # Your refresh_token
 
     try:                        
         api_response = api_instance.get_token(grant_type=grant_type, client_id=client_id, client_secret=client_secret, redirect_uri=redirect_uri, code=code, refresh_token=refresh_token)
